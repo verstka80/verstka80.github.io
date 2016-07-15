@@ -1,0 +1,599 @@
+@import "bourbon/bourbon"
+
+$text-color: #333
+$dark-color: #000
+$red-color: #9C1718
+$blue-color: #013469
+$green-color: #67BC5C
+$white-color: #fff
+
+body
+    font-family: "RobotoRegular", sans-serif
+    color: $text-color
+    font-weight: normal
+    font-size: 16px
+    min-width: 320px
+    position: relative
+    line-height: 1.6
+    -webkit-font-smoothing: antialised
+    
+    // Если подключаем анимацию к сайту, то обязательно
+    overflow-x: hidden
+
+h1
+    color: #fff
+    font-size: 60px
+    line-height: 56px
+    font-weight: bold
+    font-family: "CleanvertisingLight", sans-serif
+    margin: 0
+
+    
+section
+    padding: 50px 0 40px
+    &.s_dark
+        h2,h3,p
+            color: #fff
+    h2
+        color: $blue-color
+        font-size: 50px
+        line-height: 56px
+        margin-top: 0
+        margin-bottom: 50px
+        font-family: "CleanvertisingLight", sans-serif
+        text-align: center
+        font-weight: normal
+
+p strong
+    font-family: "RobotoBold", sans-serif
+    font-weight: normal
+    
+        
+    
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+    color: red
+    box-shadow: $red-color 0 0 0 1px
+    border-color: $red-color
+    
+body input:required:valid,
+body textarea:required:valid
+    color: green
+    
+.hidden
+    display: none
+    
+header
+    min-height: 640px
+    background-image: url(../img/top_bg.jpg)
+    background-position: top center
+    background-size: cover
+    color: white
+    padding-top: 32px
+    padding-bottom: 40px
+    position: relative
+    
+
+/* topline */    
+
+        
+.top_line
+    .logo
+        font-size: 40px
+        font-family: "RobotoBold",  sans-serif
+        font-weight: bold
+        
+.top_phone
+    text-align: right
+    
+.top_phone
+    .tab
+        cursor: pointer
+        
+.top_phone
+    .tab_content
+        font-size: 35px
+        font-family: "RobotoBold",  sans-serif
+        font-weight: bold
+    
+.top_phone
+    .wrapper
+        .tab
+            text-transform: uppercase
+            cursor: pointer
+        
+
+
+.body
+    .tab_item
+        //display: none
+        
+.body
+    .tab_item: first-child
+        display: block
+        
+        
+.top_phone
+    .wrapper
+        .active
+            text-decoration: underline
+            
+.top_phone 
+    .tab_item
+        //display: none
+        font-size: 34px
+        font-family: "RobotoBold", sans-serif
+        
+
+.top_header        
+    margin-top: 60px
+    h2
+        margin: 10px 0 0
+        font-family: "CleanvertisingLight", sans-serif
+        font-size: 36px
+  
+
+/* табы с фоном */  
+
+.tabs_header
+    margin-top: 50px
+    
+    .tab_content 
+        ul 
+            li
+                padding-left: 40px
+                list-style-type: none
+                position: relative
+                margin-bottom: 12px
+    
+    ul, li
+        margin: 0
+        padding: 0
+        list-style-type: none
+        
+    
+    li
+        padding-left: 40px
+        position: relative
+        margin-bottom: 7px
+        
+    i
+        position: absolute
+        left: 0
+        top: 5px
+        line-height: 26px
+        color: #6f6a67
+            
+    .tabs
+        .tab 
+            //разделение загловка и контента//
+            display: inline-block
+            background-color: rgba(255, 255, 255, 0.25)
+            padding: 12px 18px
+            text-transform: uppercase
+            cursor: pointer
+            float: left
+            font-family: "RobotoBold",  sans-serif
+            +transition(all 1s ease)
+           
+            &.active
+                background-color: rgba(255, 255, 255, 0.6)
+                color: #000
+                text-decoration: none
+                
+    .tab_content
+        font-size: 18px
+        background-color: rgba(255, 255, 255, 0.6)
+        padding: 12px 18px 16px
+        color: #000
+        text-transform: uppercase
+        font-family: "RobotoBold",  sans-serif
+        
+        
+    
+
+
+    
+/* Кнопка  */
+.button
+    border: none
+    border-radius: 5px
+    cursor: pointer
+    display: inline-block
+    height: 46px
+    padding: 0px 32px
+    background-color: #000
+    font-family: "RobotoBold", sans-serif
+    text-transform: uppercase
+    text-align: center
+    &.btn_red
+        background-color: $red-color
+    &.btn_green
+        background-color: $green-color
+    &.btn_white
+        background-color: #fff
+        color: #000000
+        
+        
+/* Кнопка  */
+
+.button_wrap
+    text-align: right
+    
+    
+    .button
+        color: #fff
+   
+.dop_sales 
+    margin-bottom: 18px
+    margin-top: 18px
+    
+
+    
+/////// ТИЗЕРЫ  ////////////////////////////
+.s_tizers
+    // исользуем миксины c bourbon.io 
+    +linear-gradient(#c6d8ee, #e8eff7)
+    padding-bottom: 0px
+    color: $blue-color
+    text-transform: uppercase
+    font-family: "CleanvertisingLight", sans-serif
+   
+    span
+        font-size: 12px
+        display: block
+        // display: block чтобы span и strong шли друг под другом
+    
+    strong
+        font-weight: normal
+        font-size: 23px
+        display: block
+        
+    // дает bottom при схлопывании 
+    .row
+        >div
+            margin-bottom: 35px
+    
+.tiz_img,
+.tiz_descr
+    display: inline-block
+    // чтобы шли друг за другом
+    vertical-align: bottom
+    // чтобы выравнивались по низу
+    
+.tiz_img
+    i
+        //font-family: "RobotoRegular", sans-serif
+        font-size: 70px
+        line-height: 56px
+        
+.s_tizers .row
+    >div:nth-child(1)
+        i
+            font-family: "RobotoRegular", sans-serif
+            letter-spacing: -12px
+            margin-right: 18px
+            line-height: 60px
+        
+        strong
+            font-size: 25px
+            line-height: 28px
+        span
+            font-size: 20px
+            line-height: 24px
+    
+            
+    >div:nth-child(2)
+        strong 
+            font-size: 25px
+            line-height: 44px
+        span
+            font-size: 16px
+            line-height: 3px
+            
+    >div:nth-child(3)
+        i
+            right: 3px
+            font-size: 75px
+            position: relative
+            bottom: 0px
+        strong
+            line-height: 44px
+        span
+            line-height: 1px
+    
+    >div:nth-child(4)
+        i
+            line-height: 54px
+        strong
+            line-height: 34px
+        span
+            font-size: 13px
+            line-height: 12px
+            
+/////// ТИЗЕРЫ  END  //////////////////////////        
+             
+
+
+.profi_left
+    //float: left
+    //margin-right: 20px
+    color: $red-color
+    //display: inline-block
+   
+    
+    i
+        font-size: 100px
+        line-height: 100px
+
+.profi_right
+    h3
+        color: $red-color
+        margin: 0
+        font-size: 28px
+    p
+        margin-top: 5px
+    
+form
+    background-color: #F7F7F7
+    padding: 25px 30px
+    border: $green-color 5px solid
+    border-radius: 5px
+    
+    h2
+        text-transform: uppercase
+        margin-top: 0
+        margin-bottom: 30px
+        font-family: "RobotoBold",  sans-serif
+        font-size: 22px
+        line-height: 22px
+        color: $text-color
+    
+    .button_wrap
+        text-align: center
+        margin: 32px 0 0
+    
+label
+    display: block
+    margin-bottom: 10px
+    color: #666
+    font-size: 14px
+    
+    input, select
+        display: block
+        height: 40px
+        line-height: 40px
+        border: #DFDFDF 1px solid
+        width: 100%
+        box-shadow: 0 0 20px rgba(0,0,0,.1) inset
+        // отвечает за то, что курсор отодвигается на 10px от края input
+        text-indent: 10px
+        font-size: 16px
+        
+    select
+        //background-image: url(../img/polygon.svg)
+        //background-position: right center
+        //background-repeat: no-repeat
+        
+        &:focus
+            box-shadow: $green-color 0 0 0 1px
+            border-radius: 3px
+            border-color: $green-color
+
+
+
+///// CAROUSEL   ОТЗЫВЫ /////////
+
+.s_review
+    background-image: url(../img/middle_bg.jpg)
+    background-repeat: repeat-x
+    background-attachment: fixed
+    min-height: 500px
+    background-position: top center
+    background-size: cover
+        
+.review_item
+    color: #fff
+    text-align: center
+    
+    h4
+        font-family: "TimesNewRoman", serif
+        font-size: 22px
+        line-height: 18px
+        font-style: italic
+        font-weight: normal
+        margin: 28px 0 20px
+        
+    .hr
+        width: 80px
+        height: 1px
+        background-color: #CEA380
+        margin: auto
+        
+    p
+        font-size: 15px
+        float: none
+        display: inline-block
+        margin: 30px auto 0px
+        
+    
+    .image_wrap
+        text-align: center
+        img
+            width: 165px
+            height: 165px
+            display: inline-block
+            
+            // делаем круг /// 
+            border-radius: 50%
+            border: #5D5A55 10px solid
+            
+            
+.owl-nav
+    div
+        width: 37px
+        height: 140px
+        background-image: url(../img/s_arrows.png)
+        position: absolute
+        top: 0
+        
+        &.owl-next
+            right: 0
+            background-position: top right
+        
+.owl-dots
+    width: 100%
+    margin-top: 30px
+    text-align: center
+    
+    .owl-dot
+        width: 10px
+        height: 10px
+        background-color: #fff
+        display: inline-block
+        margin: 0 5px
+        border-radius: 50%
+        opacity: .3
+            
+        &.active
+            opacity: .8
+            
+
+.s_back
+    padding: 0px
+    background-image: url(../img/red_bg.jpg)
+    background-position: top center
+    
+    h3
+        font-size: 26px
+        text-transform: uppercase
+        font-family: "RobotoRegular", sans-serif
+        font-weight: normal
+        text-align: center
+        line-height: 34px
+        background-color: rgba(255, 255, 255, 0.15)
+        padding: 16px
+        margin: 38px 0px 0px
+        
+        
+    .button
+        background-color: #fff
+        color: #000
+        
+    .button_wrap
+        text-align: center
+        margin: 28px auto 28px
+        
+.s_contacts
+    text-align: center
+    padding-bottom: 0
+    
+    .contacts_top
+        text-align: center
+    
+    .wrapper
+         
+        font-size: 18px
+        margin-top: 15px
+        
+       
+            
+    h2
+        color: #000
+        display: inline-block
+        margin-right: 30px
+        margin-bottom: 5px
+        height: 45px
+        line-height: 45px
+        vertical-align: middle
+    
+    .tabs
+        display: inline-block
+        height: 45px
+        line-height: 45px
+        vertical-align: middle
+        
+        .tab
+            float: left
+            padding: 0px 70px
+            color: $red-color
+            border: $red-color 5px solid
+            font-family: "RobotoBold", sans-serif
+            text-transform: uppercase
+            line-height: 38px
+            &:first-child
+                border-radius: 3px 0 0 3px
+            &:last-child
+                border-radius: 0 3px 3px 0
+            &.active
+                background-color: $red-color
+                color: #fff
+           
+.map
+    margin-top: 20px
+    min-height: 400px
+    background-color: #DFD4B4
+           
+.s_footer
+    text-align: center
+    margin-bottom: 190px
+    
+    
+    h2
+        color: $text-color
+        margin: 20px auto 20px
+        line-height: 50px
+    
+    p
+        margin-bottom: 40px
+        
+    .button_wrap
+        text-align: center
+        
+    
+
+.s_footer_tabs
+    color: $red-color
+    text-transform: uppercase
+    margin-bottom: 36px
+    
+    .tab_content
+        font-family: "RobotoBold", sans-serif
+        font-size: 35px
+        
+        
+.s_footer_tabs
+    .wrapper
+        .tab
+            cursor: pointer
+            font-weight: bold
+        .active 
+            color: $red-color
+            text-decoration: underline
+                    
+.s_footer
+    .tab_item 
+        display: none
+    
+.s_footer
+    .tab_item:first-child 
+        display: block
+    
+#form
+    max-width: 360px
+    margin: auto
+    
+    // чтобы крестик справа сверху не уехал
+    position: relative
+    
+    h2
+        text-align: center
+        font-weight: normal
+        
+.zayvka
+    text-align: center
+    font-weight: bold
+    font-size: 40px
+    margin-bottom: 60px
+        
+        

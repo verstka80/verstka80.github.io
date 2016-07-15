@@ -1,0 +1,159 @@
+/*==========  Desktop First Method  ==========*/
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {
+    .tiz_img, .tiz_descr {
+        display: block;
+        text-align: center;
+    }
+    .red_tizers .rt_descr {
+        margin-left: 35px;
+    }
+    .tiz_descr {
+        margin-top: 10px;
+    }
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {
+    .red_tizers .rt_descr {
+        margin-left: 55px;
+    }
+    .tiz_descr {
+        margin-top: 10px;
+    }
+    /* чтобы было расстояние от поcледнего itema  */
+    .profi_item:last-child {
+        margin-bottom: 30px;
+    }
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+    .logo, .top_phone, .top_header {
+        text-align: center
+    }
+    .logo {
+        margin-bottom: 10px;
+    }
+    .top_header h1 {
+        font-size: 45px;
+    }
+    .top_header h2 {
+        font-size: 30px;
+        margin: 0px 0 0;
+    }
+    .top_header {
+        margin-top: 40px;
+    }
+    .tiz_img,
+    .tiz_descr {
+        display: inline-block;
+        text-align: left;
+    }
+    .red_tizers .rt_descr {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .profi_item {
+        width: 100%;
+    }
+    section h2 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .profi_item {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {
+    .top_phone .tab_item {
+        font-size: 30px;
+    }
+    .top_header h1 {
+        line-height: 1;
+    }
+    .top_header h2 {
+        font-size: 23px;
+        margin: 10px 0 0;
+    }
+    .button_wrap {
+        text-align: center;
+    }
+    .s_contacts .tabs .tab {
+        padding: 0px 20px;
+    }
+    
+    .s_footer h2 {
+        line-height: 40px;
+    }
+    
+    .s_footer p {
+        margin-bottom: 40px;
+        line-height: 20px;
+    }
+}
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 320px) {
+    .top_phone .tab_item {
+        font-size: 26px;
+    }
+    section h2 {
+        font-size: 32px;
+        line-height: 32px;
+        font-weight: bold;
+    }
+    
+    .s_footer h2 {
+        line-height: 40px;
+    }
+    
+    .s_footer p {
+        margin-bottom: 40px;
+        line-height: 20px;
+    }
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) {}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px) {}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {}
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {}

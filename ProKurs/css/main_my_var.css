@@ -1,0 +1,352 @@
+@charset "UTF-8";
+body {
+  font-family: "RobotoRegular", sans-serif;
+  color: #333333;
+  font-weight: normal;
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialised;
+  overflow-x: hidden;
+}
+
+h1 {
+  color: white;
+  font-size: 60px;
+  line-height: 56px;
+  font-weight: bold;
+  font-family: "CleanvertisingLight", sans-serif;
+  margin: 0;
+}
+
+section {
+  padding: 50px 0 40px;
+}
+section.s_dark h2, section.s_dark h3, section.s_dark p {
+  color: white;
+}
+section h2 {
+  color: #013469;
+  font-size: 50px;
+  line-height: 56px;
+  margin-bottom: 50px;
+  font-family: "CleanvertisingLight", sans-serif;
+  text-align: center;
+  margin-top: 0;
+  font-weight: normal;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: red;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+  color: green;
+}
+
+.hidden {
+  display: none;
+}
+
+header {
+  min-height: 640px;
+  background-image: url(../img/top_bg.jpg);
+  background-position: top center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  color: white;
+  padding-top: 32px;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+/* topline */
+.top_line .logo {
+  font-size: 40px;
+  font-family: "RobotoBold", sans-serif;
+  font-weight: bold;
+}
+
+.top_phone {
+  text-align: right;
+}
+
+.top_phone .tab {
+  cursor: pointer;
+}
+
+.top_phone .tab_content {
+  font-size: 35px;
+  font-family: "RobotoBold", sans-serif;
+  font-weight: bold;
+}
+
+.top_phone .wrapper .tab {
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.body .tab_item:first-child {
+  display: block;
+}
+
+.top_phone .wrapper .active {
+  text-decoration: underline;
+}
+
+.top_phone .tab_item {
+  font-size: 34px;
+  font-family: "RobotoBold", sans-serif;
+}
+
+.top_header {
+  margin-top: 60px;
+}
+.top_header h2 {
+  margin: 10px 0 0;
+  font-family: "CleanvertisingLight", sans-serif;
+  font-size: 36px;
+}
+
+/* табы с фоном */
+.tabs_header {
+  margin-top: 50px;
+}
+.tabs_header .tab_content ul li {
+  padding-left: 40px;
+  list-style-type: none;
+  position: relative;
+  margin-bottom: 12px;
+}
+.tabs_header ul, .tabs_header li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.tabs_header li {
+  padding-left: 40px;
+  position: relative;
+  margin-bottom: 7px;
+}
+.tabs_header i {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  line-height: 26px;
+  color: #6f6a67;
+}
+.tabs_header .tabs .tab {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 12px 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  float: left;
+  font-family: "RobotoBold", sans-serif;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.tabs_header .tabs .tab.active {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: black;
+  text-decoration: none;
+}
+.tabs_header .tab_content {
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 12px 18px 16px;
+  color: black;
+  text-transform: uppercase;
+  font-family: "RobotoBold", sans-serif;
+}
+
+/* Кнопка  */
+.button {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  height: 46px;
+  padding: 0px 32px;
+  background-color: black;
+  font-family: "RobotoBold", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+.button.btn_red {
+  background-color: #9c1718;
+}
+.button.btn_green {
+  background-color: #67bd5c;
+}
+.button.btn_white {
+  background-color: white;
+  color: black;
+}
+
+/* Кнопка  */
+.button_wrap {
+  text-align: right;
+}
+.button_wrap .button {
+  color: white;
+}
+
+.dop_sales {
+  margin-bottom: 18px;
+  margin-top: 18px;
+}
+
+.s_tizers {
+  background-color: #c6d8ee;
+  background-image: -webkit-linear-gradient(#c6d8ee, #e8eff7);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c6d8ee), to(#e8eff7));
+  background-image: linear-gradient(#c6d8ee, #e8eff7);
+  color: #013469;
+  font-family: "CleanvertisingLight", sans-serif;
+  text-transform: uppercase;
+  padding: 35px 0 0;
+}
+.s_tizers span {
+  font-size: 12px;
+  display: block;
+}
+.s_tizers strong {
+  font-weight: normal;
+  font-size: 23px;
+  display: block;
+}
+.s_tizers .row > div {
+  margin-bottom: 35px;
+}
+
+.tiz_img,
+.tiz_descr {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.tiz_img i {
+  font-size: 86px;
+  line-height: 56px;
+  margin-right: 5px;
+}
+
+.s_tizers .row > div:nth-child(1) i {
+  font-family: "RobotoRegular", sans-serif;
+  letter-spacing: -16px;
+  margin-right: 20px;
+  position: relative;
+  top: 4px;
+}
+.s_tizers .row > div:nth-child(1) strong {
+  font-size: 25px;
+  line-height: 22px;
+}
+.s_tizers .row > div:nth-child(1) span {
+  font-size: 19px;
+  line-height: 28px;
+}
+.s_tizers .row > div:nth-child(2) strong {
+  font-size: 23px;
+  line-height: 36px;
+}
+.s_tizers .row > div:nth-child(2) span {
+  font-size: 13px;
+  line-height: 11px;
+}
+.s_tizers .row > div:nth-child(2) i {
+  position: relative;
+  bottom: -5px;
+  font-size: 78px;
+}
+.s_tizers .row > div:nth-child(3) strong {
+  position: relative;
+  right: 6px;
+  font-size: 23px;
+  line-height: 40px;
+}
+.s_tizers .row > div:nth-child(3) span {
+  position: relative;
+  right: 6px;
+  font-size: 13px;
+  line-height: 8px;
+}
+.s_tizers .row > div:nth-child(3) i {
+  position: relative;
+  bottom: -5px;
+  right: 5px;
+  font-size: 82px;
+}
+.s_tizers .row > div:nth-child(4) strong {
+  font-size: 23px;
+  line-height: 32px;
+}
+.s_tizers .row > div:nth-child(4) span {
+  font-size: 13px;
+  line-height: 14px;
+}
+.s_tizers .row > div:nth-child(4) i {
+  position: relative;
+  bottom: -5px;
+  font-size: 75px;
+}
+
+section .red_tizers {
+  background-color: white;
+}
+
+section .profi {
+  color: #013469;
+  font-weight: regular;
+  text-align: center;
+}
+section h2 {
+  margin: 0px;
+}
+
+.red_tizers {
+  line-height: 1;
+  padding-top: 0px;
+}
+.red_tizers i {
+  font-size: 130px;
+  color: #9c1718;
+}
+.red_tizers .rt_descr {
+  padding-top: 20px;
+  margin-left: 15px;
+}
+.red_tizers .rt_descr span {
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: #9c1718;
+  display: block;
+}
+.red_tizers .rt_descr p {
+  line-height: 22px;
+  display: block;
+  margin-top: 0px;
+}
+.red_tizers .rt_descr p strong {
+  font-weight: bold;
+}
+
+.rt_img,
+.rt_descr {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.rt_img i.my.my_i {
+  position: relative;
+  right: 9px;
+}
+
+.four_part {
+  height: 100%;
+  background-color: #ababab;
+}
