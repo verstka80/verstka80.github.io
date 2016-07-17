@@ -51,3 +51,12 @@ $(document).ready(function() {
 	
 });
 
+
+$(window).load(function() {
+
+    //PRELOADER
+	$(".loader_inner").fadeOut();
+	$(".loader").delay(400).fadeOut("slow");
+
+});
+

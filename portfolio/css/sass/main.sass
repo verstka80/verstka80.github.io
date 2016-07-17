@@ -90,8 +90,6 @@ body textarea:required:valid
                 -o-transition: all .4s
                 transition: all .4s
                 
-                
-            
                             
 .aside_content
     width: 100%
@@ -101,9 +99,6 @@ body textarea:required:valid
     top: 50px
     padding: 20px 0
     
-    
-        
-        
     .user_info
         text-align: center
         
@@ -115,10 +110,6 @@ body textarea:required:valid
         -webkit-transition: all .2s
         -o-transition: all .2s
         transition: all .2s
-        
-        
-        
-           
         
         img
             width: 130px
@@ -135,7 +126,8 @@ body textarea:required:valid
 
     
     nav
-        margin: 35px 0
+        position: relative
+        z-index: 5
         
         ul, li
             margin: 0
@@ -162,6 +154,8 @@ body textarea:required:valid
                     text-decoration: none
                     background-color: tomato
                     color: #fff
+                    
+                    
                        
 
             //linea иконки прописываем здесь, так как  список в верстке будет выводиться из админки word-press     
@@ -258,5 +252,32 @@ body textarea:required:valid
             opacity: 0
 
 
+// PRELOADER
+
+.loader
+    background: none repeat scroll 0 0 #ffffff
+    bottom: 0
+    height: 100%
+    left: 0
+    position: fixed
+    right: 0
+    top: 0
+    width: 100%
+    z-index: 9999
+
+.loader 
+    .loader_inner
+        background-image: url("../img/preloader.gif")
+        background-size: cover
+        background-repeat: no-repeat
+        background-posirion: center center
+        background-color: #fff
+        height: 60px
+        width: 60px
+        margin-top: -30px
+        margin-left: -30px
+        left: 50%
+        top: 50%
+        position: absolute
 
         
