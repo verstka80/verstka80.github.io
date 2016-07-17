@@ -142,6 +142,11 @@ $(".s_footer_tabs .tabs .tab").click(function() {
 
 $(window).load(function() {
     
+    //PRELOADER
+    $(".loader_inner").fadeOut();
+	$(".loader").delay(400).fadeOut("slow");
+    
+    
     // Обязательно подключить waypoints.min.js //
     $(".top_header h2").animated("fadeInDown", "fadeInUp");
     
