@@ -266,3 +266,31 @@ body textarea:required:valid {
   -webkit-transition-delay: 0.5s;
   transition-delay: 0.5s;
 }
+
+.filter_items {
+  position: fixed;
+  bottom: 0;
+  color: white;
+  right: 0;
+  text-align: right;
+  width: 100%;
+  padding: 10px 10px 0;
+  background-color: #181818;
+}
+
+.filter_label {
+  background-color: transparent;
+  border: 1px white solid;
+  padding: 5px 15px;
+  margin: 0px 3px 10px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  opacity: 0.4;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.filter_label:hover {
+  background-color: tomato;
+  opacity: 1;
+  border-color: tomato;
+}

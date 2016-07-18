@@ -48,16 +48,16 @@ $(document).ready(function() {
     images.find("img").load(function() {
         wall.fitWidth();
     });
-
-    // $(".filter-label").click(function() {
-    // 	$(".filter-label").removeClass("active");
-    // 	var filter = $(this).addClass("active").data("filter");
-    // 	wall.filter(filter);
-    // 	setTimeout(function() {
-    // 		$(window).resize();
-    // 		wall.fitWidth();
-    // 	}, 400);
-    // });
+                    // Плитки FREEWALL - фильтрация  //
+         $(".filter_label").click(function() {
+            $(".filter_label").removeClass("active");
+            var filter = $(this).addClass("active").data("filter");
+            wall.filter(filter);
+            setTimeout(function() {
+                $(window).resize();
+                wall.fitWidth();
+            }, 400);
+         });
 
 
 
