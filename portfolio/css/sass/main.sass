@@ -37,6 +37,7 @@ body textarea:required:valid
     
     // чтобы скрывалось все по x
     overflow-x: hidden
+    outline: none
     
     // чтобы выезжал плавно
     -webkit-transition: all .5s
@@ -80,6 +81,10 @@ body textarea:required:valid
         // чтобы nav сдвигался на уровень слов
         .aside_content
             li
+                //смещение на 5px навигации
+                &:hover a
+                    text-indent: 5px
+                
                 a::before
                     margin: -8px 15px 0px -38px
                                 
@@ -185,10 +190,6 @@ body textarea:required:valid
             &:nth-child(3) 
                 a::before
                     content: "R"
-    
-        
-        
-        
         
 // Кнопка
 .btn_mnu
@@ -279,5 +280,50 @@ body textarea:required:valid
         left: 50%
         top: 50%
         position: absolute
-
         
+// PRELOADER
+        
+
+
+//  CONTENT_GALERY
+
+.content 
+    position: relative
+    margin: 5px 5px 55px 55px
+    left: 0
+    
+    -webkit-transition: all .5s
+    -o-transition: all .5s
+    transition: all .5s
+    
+.gallery
+    a
+        overflow: hidden
+        width: 320px
+        min-height: 50px
+        display: block
+
+    img
+        display: block
+        max-width: 100%
+        -webkit-transition: all 15s
+        -o-transition: all 15s
+        transition: all 15s
+        
+        &:hover
+            -webkit-transform: scale(5)
+            -ms-transform: scale(5)
+            -o-transform: scale(5)
+            transform: scale(5)
+        
+        
+.left_side.active + .content
+    left: 250px
+    
+    -webkit-transition: all .5s
+    -o-transition: all .5s
+    transition: all .5s
+    transition-delay: .5s
+
+
+
