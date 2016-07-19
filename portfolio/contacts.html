@@ -30,7 +30,7 @@
 
 </head>
 
-<body>
+<body class="inside">
 
 	<aside class="left_side">
 
@@ -60,35 +60,59 @@
 
 	</aside>
 
-	<div class="content gallery">
+	<div class="content">
 
-		<a class="sv" href="img/images/1.jpg"><img src="img/dummy.png" data-original="img/images/1.jpg" alt="Alt"></a>
-		<a class="dr" href="img/images/2.jpg"><img src="img/dummy.png" data-original="img/images/2.jpg" alt="Alt"></a>
-		<a class="sv" href="img/images/3.jpg"><img src="img/dummy.png" data-original="img/images/3.jpg" alt="Alt"></a>
-		<a class="sv" href="img/images/4.jpg"><img src="img/dummy.png" data-original="img/images/4.jpg" alt="Alt"></a>
-		<a class="dr" href="img/images/5.jpg"><img src="img/dummy.png" data-original="img/images/5.jpg" alt="Alt"></a>
-		<a class="dr" href="img/images/6.jpg"><img src="img/dummy.png" data-original="img/images/6.jpg" alt="Alt"></a>
-		<a class="dr" href="img/images/7.jpg"><img src="img/dummy.png" data-original="img/images/7.jpg" alt="Alt"></a>
-		<a class="sv" href="img/images/8.jpg"><img src="img/dummy.png" data-original="img/images/8.jpg" alt="Alt"></a>
-		<a href="img/images/9.jpg"><img src="img/dummy.png" data-original="img/images/9.jpg" alt="Alt"></a>
-		<a class="dr" href="img/images/10.jpg"><img src="img/dummy.png" data-original="img/images/10.jpg" alt="Alt"></a>
-		<a class="sv" href="img/images/1.jpg"><img src="img/dummy.png" data-original="img/images/1.jpg" alt="Alt"></a>
-		<a href="img/images/2.jpg"><img src="img/dummy.png" data-original="img/images/2.jpg" alt="Alt"></a>
-		<a class="dr" href="img/images/3.jpg"><img src="img/dummy.png" data-original="img/images/3.jpg" alt="Alt"></a>
-		<a class="sv" href="img/images/4.jpg"><img src="img/dummy.png" data-original="img/images/4.jpg" alt="Alt"></a>
-		<a href="img/images/5.jpg"><img src="img/dummy.png" data-original="img/images/5.jpg" alt="Alt"></a>
-		<a class="dr" href="img/images/6.jpg"><img src="img/dummy.png" data-original="img/images/6.jpg" alt="Alt"></a>
-		<a class="sv" href="img/images/7.jpg"><img src="img/dummy.png" data-original="img/images/7.jpg" alt="Alt"></a>
-		<a class="sv" href="img/images/8.jpg"><img src="img/dummy.png" data-original="img/images/8.jpg" alt="Alt"></a>
-		<a class="dr" href="img/images/9.jpg"><img src="img/dummy.png" data-original="img/images/9.jpg" alt="Alt"></a>
-		<a class="sv" href="img/images/10.jpg"><img src="img/dummy.png" data-original="img/images/10.jpg" alt="Alt"></a>
+		<div class="content_header">
+			<h1>Обратная связь</h1>
+			<p>Свяжитесь со мной одним из следующих способов</p>
+		</div>
 
-	</div>
+		<div class="content_body">
+			<div class="row form_contacts">
+				<div class="col-sm-6">
+					<ul class="ul_contacts">
+						<li>
+							<h3><i class="icon icon-basic-webpage-img-txt"></i> Мой сайт:</h3>
+							<p><a href="http://webdesign-master.ru" target="_blank">webdesign-master.ru</a></p>
+						</li>
+						<li>
+							<h3><i class="icon icon-basic-geolocalize-05"></i> Адрес:</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</li>
+						<li>
+							<h3><i class="icon icon-basic-smartphone"></i> Телефон:</h3>
+							<p>+7 (999) 999-99-99</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-6">
+					<form id="callback" class="callback">
+						
+						<h3>Оставить заявку</h3>
 
-	<div class="filter_items">
-		<button class="filter_label active">Все</button>
-		<button class="filter_label" data-filter=".sv">Свадьба</button>
-		<button class="filter_label" data-filter=".dr">День рождения</button>
+						<label>
+							Ваше имя
+							<input type="text" name="name" required>
+						</label>
+
+						<label>
+							Ваше E-mail
+							<input type="text" name="email" required>
+						</label>
+
+						<label>
+							Комментарий к заказу
+							<textarea name="message"></textarea>
+						</label>
+						
+						<button class="button" type="submit">Отправить заявку</button>
+
+					</form>
+				</div>
+			</div>
+
+		</div>
+
 	</div>
 	
 	<div class="hidden"></div>
